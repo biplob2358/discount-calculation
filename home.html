@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Home Page</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl font-medium mt-8 text-center">
+        Welcome To
+        <span class="font-bold text-orange-400">Discount Calculation Page</span>
+      </h1>
+    </header>
+
+    <section class="mt-8">
+      <div class="bg-sky-400 w-3/4 mx-auto px-5 py-12 rounded-lg">
+        <div
+          class="bg-white shadow-lg shadow-white-700 mx-auto w-5/12 text-center py-4 rounded-xl mb-4"
+        >
+          <h3 class="text-3xl">Pay</h3>
+          <h2 class="text-4xl">
+            ৳ <span id="total-element" class="font-bold">00</span>
+          </h2>
+        </div>
+        <div class="min-w-min">
+          <h3 class="text-2xl text-white font-medium">
+            Please Enter Total Amount
+          </h3>
+          <input
+            id="amount-field"
+            class="w-2/4 pl-4 h-8 rounded"
+            type="email"
+            name=""
+            placeholder="Total Amount "
+          />
+          <h3 class="text-2xl mt-3 text-white font-medium">
+            Please Enter Discount Percentage
+          </h3>
+          <input
+            id="discount-field"
+            class="w-2/4 pl-4 h-8 rounded block"
+            type="text"
+            name=""
+            placeholder="Discount  %"
+          />
+          <button
+            id="calculate-btn"
+            class="bg-white mr-4 shadow-lg shadow-white-700 mt-4 px-6 py-1 rounded-lg text-sky-800 text-2xl font-medium hover:bg-sky-700 hover:text-white"
+          >
+            Calculate
+          </button>
+          <button
+            id="reset-btn"
+            class="bg-white shadow-lg shadow-white-700 mt-4 px-6 py-1 rounded-lg text-sky-800 text-2xl font-medium hover:bg-sky-700 hover:text-white"
+          >
+            Reset
+          </button>
+          <button
+            id="logout-btn"
+            class="bg-white shadow-lg shadow-white-700 block mt-12 px-6 py-1 rounded-lg text-sky-800 text-2xl font-medium hover:bg-sky-700 hover:text-white"
+          >
+            Logout
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="js/function.js"></script>
+    <script src="js/discount.js"></script>
+  </body>
+</html>
